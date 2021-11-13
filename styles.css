@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+:root {
+  --text-color: #d8d7c4;
+  --text-align: center;
+  --display-grid: grid;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    rgb(52, 122, 106), 
+    rgb(14, 46, 39)
+  );
+}
+
+h1 {
+  color: var(--text-color);
+  text-align: var(--text-align);
+  margin: 40px 0px;
+  box-shadow: 0 3px 10px 0.5px rgba(66, 12, 12, 0.5);
+  letter-spacing: 1.5px;
+}
+
+.description {
+  text-align: var(--text-align);
+  margin-bottom: 40px;
+}
+
+.description-heading {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: var(--text-color);
+  line-height: 23px;
+}
+
+.container {
+  display: var(--display-grid);
+  place-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 40px 20px 40px 20px;
+  box-shadow: 0 0px 10px 0.5px rgba(0, 0, 0, 0.38);
+  background-color: #12322d11;
+  border-radius: 3px;
+}
+
+.trivia-card {
+  width: 100%;
+}
+
+.input-field-container {
+  display: var(--display-grid);
+  place-items: center;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 4px;
+  outline: none;
+  text-align: var(--text-align);
+}
+
+.btn-container {
+  display: var(--display-grid);
+  place-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 90%;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  background: #44b1a052;
+  color: var(--text-color);
+  padding: 6px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #44b1a194;
+}
+
+.fact-heading {
+  color: var(--text-color);
+  text-align: var(--text-align);
+  margin-bottom: 15px;
+}
+
+.fact-text {
+  color: var(--text-color);
+  text-align: var(--text-align)
+}
+
+@media screen and (min-width: 600px) {
+  .container{
+    width: 60vw;
+  }
+}
